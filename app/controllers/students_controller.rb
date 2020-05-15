@@ -11,6 +11,7 @@ class StudentsController < ApplicationController
 
   def status
     student = Student.find(params[:id])
+    student.change_status
     redirect_to student_path
   end
 
