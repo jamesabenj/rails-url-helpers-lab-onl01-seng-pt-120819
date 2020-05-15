@@ -10,6 +10,7 @@ class StudentsController < ApplicationController
   end
 
   def status
+    byebug
     student = Student.find(params[:id])
     if student.active == true
       student.active = false
