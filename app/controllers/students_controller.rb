@@ -10,10 +10,10 @@ class StudentsController < ApplicationController
   end
 
   def status
-    student = Student.find(params[:id])
-    student.change_status
-    student.save
-    redirect_to student_path
+    @student = Student.find(params[:id])
+    @student.change_status
+    @student.save
+    redirect_to @student_path
   end
 
   private
