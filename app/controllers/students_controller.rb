@@ -13,7 +13,7 @@ class StudentsController < ApplicationController
     student = Student.find(params[:id])
     student.change_status
     student.save
-    redirect_to students_path
+    redirect_to student_path
   end
 
   private
