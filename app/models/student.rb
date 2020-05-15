@@ -3,10 +3,10 @@ class Student < ActiveRecord::Base
     self.first_name + " " + self.last_name
   end
 
-  def status 
-    if self.active == true 
+  def status
+    if self.active == true
       "This student is currently active."
-    else 
+    else
       "This student is currently inactive."
-  end 
+  end
 end
