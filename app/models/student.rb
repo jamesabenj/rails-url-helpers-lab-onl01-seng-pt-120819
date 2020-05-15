@@ -8,5 +8,6 @@ class Student < ActiveRecord::Base
       "This student is currently active."
     else
       "This student is currently inactive."
+    end
   end
 end
