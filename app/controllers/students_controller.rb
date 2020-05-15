@@ -10,7 +10,6 @@ class StudentsController < ApplicationController
   end
 
   def status
-    byebug
     student = Student.find(params[:id])
     student.change_status
     student.save
