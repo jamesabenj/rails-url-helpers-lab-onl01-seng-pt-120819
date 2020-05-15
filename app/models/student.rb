@@ -17,5 +17,6 @@ class Student < ActiveRecord::Base
     else
       self.active = true
     end
+    self.save
   end
 end
