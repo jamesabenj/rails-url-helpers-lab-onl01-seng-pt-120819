@@ -10,7 +10,7 @@ class StudentsController < ApplicationController
   end
 
   def status
-    bye_bug
+    byebug
     student = Student.find(params[:id])
     student.change_status
     redirect_to student_path
