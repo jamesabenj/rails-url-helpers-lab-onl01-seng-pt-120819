@@ -16,7 +16,7 @@ class StudentsController < ApplicationController
     else
       student.active = true
     end
-    redirect 'show'
+    redirect_to @show 
   end
 
   private
