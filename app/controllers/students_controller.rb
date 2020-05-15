@@ -13,6 +13,7 @@ class StudentsController < ApplicationController
     byebug
     student = Student.find(params[:id])
     student.change_status
+    student.save
     redirect_to student_path
   end
 
