@@ -10,7 +10,12 @@ class StudentsController < ApplicationController
   end
 
   def status
-    @student = Student.find(params[:id])
+    student = Student.find(params[:id])
+    if student.active == true
+      student.active = false
+    else
+      student.active = true 
+    end
   end
 
   private
