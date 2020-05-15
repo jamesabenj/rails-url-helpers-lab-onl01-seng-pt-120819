@@ -16,7 +16,7 @@ class StudentsController < ApplicationController
     else
       student.active = true
     end
-    redirect_to students_path(show)
+    redirect_to student_path(show)
   end
 
   private
