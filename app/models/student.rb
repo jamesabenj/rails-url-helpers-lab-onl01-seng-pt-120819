@@ -10,4 +10,12 @@ class Student < ActiveRecord::Base
       "This student is currently inactive."
     end
   end
+
+  def change_status
+    if self.active == true
+      self.active = false
+    else
+      self.active = true
+    end
+  end
 end
